@@ -1,25 +1,28 @@
 {
-  "name": "cypressbddautomationframework",
-  "version": "1.0.0",
-  "description": "Bahviour Driven Development Automation Framework",
-  "main": "index.js",
-  "scripts": {
-    "openCypressTestRunner": "node_modules\\.bin\\cypress open",
-    "testSpec": "node_modules\\.bin\\cypress run",
-    "headedTest": "npm run test -- --headed",
-    "chromeTest": "npm run test -- --browser chrome"
-    
-  },
-  "author": "Ola Oladeni",
-  "license": "ISC",
-  "dependencies": {
-  "cypress": "^4.4.1",
-  "cypress-cucumber-preprocessor": "^2.3.1"
-   
-  },
-  "cypress-cucumber-preprocessor":{
+ "name": "cypressbddautomationframework",
+ "version": "1.0.0",
+ "description": "Bahviour Driven Development Automation Framework",
+ "main": "index.js",
+ "scripts": {
+  "openCypressTestRunner": "node_modules\\.bin\\cypress open",
+  "test": "node_modules\\.bin\\cypress run",
+  "headedTest": "npm run test -- --headed",
+  "chromeTest": "npm run test -- --browser chrome"
+ },
+ "author": "Ola Oladeni",
+ "license": "ISC",
+ "dependencies": {
+  "-": "0.0.1",
+  "cypress": "^7.2.0",
+  "cypress-cucumber-preprocessor": "^2.3.1",
+  "npm": "^7.11.2"
+ },
+ "cypress-cucumber-preprocessor": {
   "nonGlobalStepDefinitions": true
-  }
- 
+ },
+ "devDependencies": {
+  "cypress-xpath": "^1.4.0",
+  "mocha": "^8.3.2",
+  "prettier": "2.0.5"
+ }
 }
-

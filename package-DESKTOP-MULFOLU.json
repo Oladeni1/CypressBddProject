@@ -1,0 +1,35 @@
+{
+  "name": "cypressbddautomationframework",
+  "version": "1.0.0",
+  "description": "Bahviour Driven Development Automation Framework",
+  "main": "index.js",
+  "scripts": {
+    "openCypressTestRunner": "cypress open",
+    "test": "cypress run",
+    "headedTest": "npm run test -- --headed",
+    "chromeTest": "npm run test -- --browser chrome"
+  },
+  "author": "Ola Oladeni",
+  "license": "ISC",
+  "dependencies": {
+    "-": "0.0.1",
+    "cypress-cucumber-preprocessor": "^2.3.1",
+    "npm": "^6.14.13"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  },
+  "devDependencies": {
+    "cypress": "^4.12.1",
+    "cypress-xpath": "^1.4.0",
+    "prettier": "2.0.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oladeni1/CypressBddProject.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Oladeni1/CypressBddProject/issues"
+  },
+  "homepage": "https://github.com/Oladeni1/CypressBddProject#readme"
+}
